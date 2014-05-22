@@ -1,0 +1,162 @@
+/* WP Pure CSS
+Theme URI: http://inmans.org
+Description: A custom theme created for Shane Birney Architects
+Author: Tim Inman
+Author URI: http://inmans.org
+Version: 1.0
+Tags: responsive, white, purecss, yui
+
+
+*/
+
+@import url('pure/css/pure.css'); 
+
+body { 
+ margin:0;
+ padding: 0;
+}
+
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Set your content font stack here: */
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:visited {
+	color: black;
+}
+
+.main {
+	width: 75%;
+	margin-left: 20%;
+}
+
+
+.title {
+	position: fixed;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	z-index: 100;
+	background-color: white;
+	height: 80px;
+
+}
+.title h1 {
+
+	font-size: 1.7em;
+	z-index: 100;
+
+
+}
+
+
+.brand {
+	color:black;
+	text-decoration:none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-left: 5%;
+	position: fixed;
+}
+.pageName {
+	text-align: center;
+	color: rgb(30, 140, 180);
+} 
+
+.grey {
+	background-color: #F6F6F6;
+}
+
+
+.right {text-align:right;}
+
+
+#menu {
+	vertical-align: baseline;
+	margin-right: 10%;
+	margin-top: 6px;
+	margin-bottom: 0;
+	padding: 0;
+
+
+}
+#menu ul {
+	margin-right:10px;
+
+}
+#menu a {
+	color: rgb(255, 128, 101);
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+#menu a:hover {
+	color:black;
+}
+#menu ul li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 30px;
+}
+
+/* these provide the padding for our grid */
+.pure-g-r > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.l-box {
+padding: 10px;
+
+}
+
+/* blue box */
+  #overlay {
+    position:fixed;
+    margin-top: 120px;
+    margin-left: 5%;
+    width: 30%;
+    z-index: 20;
+    color: #ff8065;
+    font-size: 36px;
+    line-height: 56
+
+    
+    
+    font-weight: bolder;
+    font-family: 'Montserrat'
+  }
+
+  .hovertext {
+    background-color: rgb(33, 128, 171);
+  }
+
+
+  .hovertext img {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display:block;
+  }
+
+.hovertext img:hover {
+  opacity:0;
+}
+
+.caption {
+	display: inline;
+	position: relative;
+	color: #fff;
+	margin-top: 20px;
+	margin-left:20px;
+	opacity: 0;
+}
+.hovered {}
+
+
