@@ -31,14 +31,21 @@
               effect: 'fade'}
 
     });
+
+      // captions for hovered images
+      $('.hovertext img').hover(
+
+        //on enter
+        function() {$(this).parent().append("<h4 class='caption'>" + this.alt + "</h4>")},
+        
+        // on leave
+        function() { $('.caption').remove()}
+        );
     })
 
-})(jQuery);
 
-// a better looking nav for mobiles
-var respondToMobile = function(menuElement) {
-  if (document.body.clientWidth < 768) {
-    menuElement.className = ""
-  };
-};
+
+
+
+})(jQuery);
 

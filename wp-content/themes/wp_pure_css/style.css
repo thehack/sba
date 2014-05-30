@@ -133,6 +133,7 @@ padding: 10px;
 
   .hovertext {
     background-color: rgb(33, 128, 171);
+    position: relative;
   }
 
 
@@ -146,17 +147,31 @@ padding: 10px;
   }
 
 .hovertext img:hover {
-  opacity:0;
+  opacity:0.2;
 }
 
-.caption {
-	display: inline;
-	position: relative;
-	color: #fff;
-	margin-top: 20px;
-	margin-left:20px;
-	opacity: 0;
+.hovertext h4:hover {
+	opacity:1;
 }
-.hovered {}
+
+h4.caption {
+	line-height: 0;
+position: absolute;
+top: 20px;
+left: 20px;
+text-transform: normal;
+z-index: 2;
+padding: 0px;
+margin: 0px;
+color: white;
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition: 0.3s ease-in-out;
+-o-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+}
+.hovered {
+	visibility: 1;
+
+}
 
 

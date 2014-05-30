@@ -15,7 +15,6 @@
     <br>
 </footer>
 <script type="text/javascript">
-    respondToMobile(document.getElementById("menu"));
 </script>
 </body>
 </html>
