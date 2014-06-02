@@ -35,18 +35,25 @@ a:visited {
 
 
 .title {
-	position: fixed;
+	position:fixed;
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	z-index: 100;
 	background-color: white;
 	height: 80px;
+	margin-left: 5%;
+	padding-left: 10px;
+	-webkit-backface-visibility: hidden;
+  	-webkit-transition: 0.3s ease-in-out;
+  	-moz-transition: 0.3s ease-in-out;
+  	-o-transition: 0.3s ease-in-out;
+  	transition: 0.3s ease-in-out;
 
 }
 .title h1 {
 
 	font-size: 1.7em;
-	z-index: 100;
+	z-index: 101;
 
 
 }
@@ -58,8 +65,6 @@ a:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
-	margin-left: 5%;
-	position: fixed;
 }
 .pageName {
 	text-align: center;
@@ -71,17 +76,14 @@ a:visited {
 }
 
 
-.right {text-align:right;}
 
 
 #menu {
+		position: fixed;
 	vertical-align: baseline;
-	margin-right: 10%;
-	margin-top: 6px;
-	margin-bottom: 0;
-	padding: 0;
-
-
+	right: 5%;
+	top: 6px;
+	z-index: 100;
 }
 #menu ul {
 	margin-right:10px;
@@ -147,7 +149,7 @@ padding: 10px;
   }
 
 .hovertext img:hover {
-  opacity:0.2;
+  opacity:0.1;
 }
 
 .hovertext h4:hover {
@@ -155,9 +157,9 @@ padding: 10px;
 }
 
 h4.caption {
-	line-height: 0;
+line-height: 0;
 position: absolute;
-top: 20px;
+top: 30px;
 left: 20px;
 text-transform: normal;
 z-index: 2;

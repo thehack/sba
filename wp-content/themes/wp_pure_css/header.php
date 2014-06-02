@@ -16,16 +16,13 @@
   </head>
   <body>
     <div class="title">
-      <div class="pure-g-r">
-      <div class="pure-u-1-2">
-        <h1><a class="brand" href="<?php echo site_url(); ?>">&nbsp;<?php bloginfo(name); ?></a></h1>
-      </div>
-        <div class="pure-u-1-2">
-        <div id="menu" class="right"> 
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
-          </div>
+      <h1><a class="brand" style="display:none;" href="<?php echo site_url(); ?>"><?php bloginfo(name); ?></a></h1>
+      <a class="brand" href="<?php echo site_url(); ?>"><img id="logo" src="http://localhost/shane/wp-content/uploads/2014/06/circle.png"></a>
+    </div>
+      <div id="menu">
+        <div>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
         </div>
-      </div>
     </div>
     <!-- under static menu-->
     <br>

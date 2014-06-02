@@ -39,6 +39,28 @@
 
 		//hide the more tags
 		$('.more-link').hide();
-	});
 
+    // initiate slideshow
+    $('#slides').slidesjs({
+      effect: {
+        fade: {
+          speed: 1000,
+          crossfade: true
+        }
+      },
+        width: 1033,
+        height: 581,
+        navigation: {
+          active:false
+        },
+        pagination: {
+          active: false
+        },
+        play: {
+          auto: true,
+          active: false,
+          effect: 'fade'}
+        });
+
+    });
 </script>
