@@ -16,7 +16,7 @@
     </style>
   </head>
   <body>
-        <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img width="30" src="http://localhost/shane/wp-content/uploads/2014/06/circle.png"></a>
+        <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/themes/wp_pure_css/pure/img/sba.png"></a>
 
     <div id="title">
       <br>
