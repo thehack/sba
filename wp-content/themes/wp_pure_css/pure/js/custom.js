@@ -33,10 +33,14 @@
           //Determines up-or-down scrolling
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
-             if($(document).scrollTop() > 100 && (downScrollInitiated == false)) {
-              $('#logo').css('position', 'absolute')
-              $('#logo').animate({top: "-100"}, 500)
-              $('h1 .brand').slideDown();
+             if($(document).scrollTop() > 60 && (downScrollInitiated == false)) {
+              $('#menu').animate({'top': '0'}, 350)
+              $('#menu').css('position', 'fixed')
+              $('#menu').css('width', '100%')
+              $('#menu').prepend($('#circleLogo'))
+              $('#circleLogo').show().animate({'top': '10px'}, 400)
+          //    $('#logo').css('position', 'absolute')
+          //    $('#logo').animate({top: "-100"}, 500)
               downScrollInitiated = true;
               console.log('downscroll');
               upScrollInitialted = false;
@@ -44,12 +48,13 @@
               } 
           }
           else {
-            if ($(document).scrollTop() < 10 ) {
+            if ($(document).scrollTop() < 59 ) {
              if (!upScrollInitialted && downScrollInitiated) {
-              $('#logo').animate({top: "10"}, 500)
-              $('h1 .brand').slideUp();
+              $('#circleLogo').hide()
+              $('#menu').css('width', '35%').animate({'top': '42px'}, 100)
+
               upScrollInitialted = true;
-                            console.log('upscroll');
+              console.log('upscroll');
               downScrollInitiated = false;
 
              }
@@ -58,7 +63,7 @@
           //Updates scroll position
           lastScroll = st;
         });
- 
+
 
     });
 })(jQuery);
