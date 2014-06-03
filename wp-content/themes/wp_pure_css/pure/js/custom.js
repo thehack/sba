@@ -34,7 +34,7 @@
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
              if($(document).scrollTop() > 42 && (downScrollInitiated == false)) {
-              $('#menu').animate({'top': '0'}, 350)
+              $('#menu ul').animate({'marginTop': '18px'}, 350)
               $('#menu').css('position', 'fixed')
               $('#menu').css('width', '100%')
               $('#menu').prepend($('#circleLogo'))
@@ -51,7 +51,8 @@
             if ($(document).scrollTop() < 59 ) {
              if (!upScrollInitialted && downScrollInitiated) {
               $('#circleLogo').hide()
-              $('#menu').css('width', '35%').animate({'top': '42px'}, 100)
+              $('#menu').css('width', '35%')
+              $('#menu ul').animate({'marginTop': '60px'}, 100)
 
               upScrollInitialted = true;
               console.log('upscroll');

@@ -70,15 +70,16 @@ a:visited {
 #menu {
 	position: fixed;
 	right: 25%;
+	top: 0px;
 	text-align: right;
-	top: 42px;
 	letter-spacing: 2px;
 	font-size: 14px;
 	background-color: #fff;
 	z-index: 100;
+
 }
 #menu ul {
-	margin-top:18px;
+	margin-top:60px;
 	margin-right:10px;
 }
 #menu a {
