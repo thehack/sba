@@ -5,11 +5,21 @@ Author: Tim Inman
 Author URI: http://inmans.org
 Version: 1.0
 Tags: responsive, white, purecss, yui
-
-
 */
 
 @import url('pure/css/pure.css'); 
+
+@font-face {
+    font-family: 'bariol';
+    src: url('http://localhost/shane/wp-content/themes/wp_pure_css/pure/fonts/bariol_regular-webfont.eot');
+    src: url('http://localhost/shane/wp-content/themes/wp_pure_css/pure/fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://localhost/shane/wp-content/themes/wp_pure_css/pure/fonts/bariol_regular-webfont.woff') format('woff'),
+         url('http://localhost/shane/wp-content/themes/wp_pure_css/pure/fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('http://localhost/shane/wp-content/themes/wp_pure_css/pure/fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body { 
  margin:0;
@@ -22,7 +32,7 @@ body,
 .pure-g-r [class *= "pure-u"] {
     /* Set your content font stack here: */
 	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'bariol', 'Open Sans', sans-serif;
 }
 
 a {
@@ -40,7 +50,6 @@ a:visited {
 
 #title {
 /*	position:fixed; */
-	font-family: 'Open Sans', sans-serif;
 	width: 98%;
 	z-index: 112;
 	background-color: white;
@@ -58,6 +67,17 @@ a:visited {
 	z-index: 101;
 	padding-left: 10px;
 }
+#logo {
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 4.8px;
+	color:#56646F;
+
+}
+#logo:hover {
+	color: #49d284;
+}
+
 .pageName {
 	text-align: center;
 	color: rgb(30, 140, 180);
@@ -84,7 +104,6 @@ a:visited {
 }
 #menu a {
 	color: #56646F;
-	text-decoration: none;
 /*	text-transform: uppercase; */
 
 }
