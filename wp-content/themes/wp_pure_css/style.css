@@ -74,11 +74,11 @@ a:visited {
 	top: 42px;
 	letter-spacing: 2px;
 	font-size: 14px;
-	width: 35%;
 	background-color: #fff;
 	z-index: 100;
 }
 #menu ul {
+	margin-top:18px;
 	margin-right:10px;
 }
 #menu a {
@@ -117,7 +117,7 @@ padding: 10px;
 /* blue box */
   #overlay {
     position:fixed;
-    top: 2 20px;
+    top: 220px;
     right: 5%;
     width: 30%;
     z-index: 20;

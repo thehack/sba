@@ -33,7 +33,7 @@
           //Determines up-or-down scrolling
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
-             if($(document).scrollTop() > 60 && (downScrollInitiated == false)) {
+             if($(document).scrollTop() > 42 && (downScrollInitiated == false)) {
               $('#menu').animate({'top': '0'}, 350)
               $('#menu').css('position', 'fixed')
               $('#menu').css('width', '100%')

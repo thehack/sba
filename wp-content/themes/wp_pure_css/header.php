@@ -16,18 +16,13 @@
     </style>
   </head>
   <body>
-        <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/themes/wp_pure_css/pure/img/sba.png"></a>
+        <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/path3027.png"></a>
 
     <div id="title">
       <br>
       <h1><a id="typeLogo" class="brand" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/path321.png" alt="<?php bloginfo(name); ?>"></a></h1>
     </div>
     <div id="menu">
-
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
-    </div>
-
-    <!-- under static menu-->
-    <br>
-    <br>
+    </div><!-- under static menu-->
     <br>
