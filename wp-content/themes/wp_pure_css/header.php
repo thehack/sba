@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
-    <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/path3027.png"></a>
+    <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/logo.png"></a>
     <div id="title">
       <br>
       <h1><a id="logo" href="<?php echo site_url(); ?>">SHANE BIRNEY ARCHITECTS</a></h1>

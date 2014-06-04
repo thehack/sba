@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="overlay">
-  <div class="l-box"><h2>PUSHING DESIGN INTO THE FUTURE</h2>
+  <div class="l-box"><h2>A YOUNG ARCHITECTURAL PRACTICE WITH IDEAS ABOVE OUR STATION</h2>
   </div>
 </div>
 <div class="main">
@@ -65,6 +65,5 @@
           active: false,
           effect: 'fade'}
         });
-
     });
 </script>

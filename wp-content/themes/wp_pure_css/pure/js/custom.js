@@ -11,7 +11,9 @@
 (function($) {
     $(document).ready(function() {
 
-       
+      // resize hack
+      $('#seventyFive').parent().css('width', "75%")
+
 
       // captions for hovered images
       $('.hovertext img').hover(
