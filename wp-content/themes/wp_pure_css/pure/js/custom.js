@@ -11,9 +11,6 @@
 (function($) {
     $(document).ready(function() {
 
-      // resize hack
-      $('#seventyFive').parent().css('width', "75%")
-
 
       // captions for hovered images
       $('.hovertext img').hover(
@@ -35,7 +32,7 @@
           //Determines up-or-down scrolling
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
-             if($(document).scrollTop() > 42 && (downScrollInitiated == false)) {
+            if($(document).scrollTop() > 42 && (downScrollInitiated == false)) {
               $('#menu ul').animate({'marginTop': '18px'}, 350)
               $('#menu').css('position', 'fixed')
               $('#menu').css('width', '100%')
@@ -50,11 +47,11 @@
               } 
           }
           else {
-            if ($(document).scrollTop() < 59 ) {
+            if ($(document).scrollTop() < 59 && ($(window).width() > 768)) {
              if (!upScrollInitialted && downScrollInitiated) {
               $('#circleLogo').hide()
               $('#menu').css('width', '35%')
-              $('#menu ul').animate({'marginTop': '60px'}, 100)
+              $('#menu ul').animate({'marginTop': '50px'}, 100)
 
               upScrollInitialted = true;
               console.log('upscroll');
@@ -65,9 +62,11 @@
           }
           //Updates scroll position
           lastScroll = st;
-        });
 
 
-    });
+        }); // end document.ready function
+
+
+    }); // end anonymous function
 })(jQuery);
 

@@ -17,12 +17,9 @@
     </style>
   </head>
   <body>
-    <a id="circleLogo" style="display:none;" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/logo.png"></a>
-    <div id="title">
-      <br>
-      <h1><a id="logo" href="<?php echo site_url(); ?>">SHANE BIRNEY ARCHITECTS</a></h1>
-    </div>
+    <a id="circleLogo" href="<?php echo site_url(); ?>"><img src="http://localhost/shane/wp-content/uploads/2014/06/logo.png"></a>
+    <div id="logo"><a href="<?php echo site_url(); ?>">SHANE BIRNEY ARCHITECTS</a></div>
     <div id="menu">
       <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
-    </div><!-- under static menu-->
-    <br>
+    </div>
+    <br><!-- under static menu-->

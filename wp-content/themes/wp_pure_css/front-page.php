@@ -16,7 +16,7 @@
 <!-- the gallery -->
 <div class="pure-g-r main">
   <div class="pure-u l-box">
-    <div class="practiceStatement">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+    <div class="practiceStatement">Shane Birney Architects is a design based architectural practice located in Derry~Londonderry producing thoughtful and beautifully crafted work. We believe in a simple, honest approach to design, combining quality with utility to produce work on time and on budget.
     </div>
   </div>
 	<?php 
@@ -41,7 +41,10 @@
 	
 	jQuery('document').ready(function($) {
 
-		//hide the more tags
+    // resize hack
+    $('#seventyFive').parent().css('width', "75%")
+		
+    //hide the more tags
 		$('.more-link').hide();
 
     // initiate slideshow

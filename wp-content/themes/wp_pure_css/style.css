@@ -37,51 +37,36 @@ body,
 
 a {
 	text-decoration: none;
-}
-a:visited {
-	color: black;
+		color:#56646F;
 }
 
+a:hover {
+	color: rgb(56,83,246);
+}
 .main {
-	width: 74%;
-	margin-left: 1%;
+	width: 72%;
+	margin-left: 25%;
 }
 
-
-#title {
-/*	position:fixed; */
-	width: 98%;
-	z-index: 112;
-	background-color: white;
-	margin-left: 1%;
-	padding-left: 10px;
-	color:black;
-	font-weight: 100;
-
-}
 
 #circleLogo{
 	position: fixed;
+	left:3%;
 	top:-100px;
-	left:1%;
 	z-index: 101;
 	padding-left: 10px;
 }
+
 #logo {
+	margin-left: 3%;
 	font-size: 18px;
 	font-weight: normal;
 	letter-spacing: 4.8px;
-	color:#56646F;
-
-}
-#logo:hover {
-	color: rgb(56,83,246);;
+	padding-left: 10px;
+	margin-top: 50px;
 }
 
-.pageName {
-	text-align: center;
-	color: rgb(30, 140, 180);
-} 
+
 
 .grey {
 	background-color: #F6F6F6;
@@ -89,29 +74,32 @@ a:visited {
 
 #menu {
 	position: fixed;
-	right: 25%;
+	right: 3%;
 	top: 0px;
 	text-align: right;
 	letter-spacing: 2px;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #fff;
-	z-index: 100;
-
-
-
+	font-weight: normal;
+	letter-spacing: 4.8px;
+	z-index: 101;
 }
+
 #menu ul {
-	margin-top:60px;
+	margin-top:50px;
 	margin-right:10px;
 }
+
 #menu a {
 	color: #56646F;
-/*	text-transform: uppercase; */
+	text-transform: uppercase;
 
 }
+
 #menu a:hover {
 	color: rgb(56,83,246);
 }
+
 #menu ul li {
 	list-style-type: none;
 	display: inline;
@@ -137,32 +125,36 @@ padding: 10px;
 }
 
 /* blue box */
-  #overlay {
-    position:fixed;
-    top: 220px;
-    right: 5%;
-    width: 29%;
-    z-index: 20;
-   	color: #ff8065;
-    font-size: 28px;
-    font-weight: bolder;
- 	font-family: 'Montserrat';
-  }
+#overlay {
+	position:fixed;
+	top: 220px;
+	left: 3%;
+	width: 37%;
+	z-index: 20;
+	color: #ff8065;
+	font-size: 26px;
+	font-weight: bolder;
+	font-family: 'Montserrat';	
+}
 
-  .hovertext {
-    background-color: rgb(56,83,246);
-    position: relative;
-  }
+#slides {
+	margin-top: 25px;
+}
+
+.hovertext {
+	background-color: rgb(56,83,246);
+	position: relative;
+}
 
 
-  .hovertext img {
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  display:block;
-  }
+.hovertext img {
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	display:block;
+}
 
 .hovertext img:hover {
   opacity:0.1;
@@ -174,21 +166,62 @@ padding: 10px;
 }
 
 h4.caption {
-line-height: 0;
-position: absolute;
-top: 30px;
-left: 20px;
-text-transform: normal;
-z-index: 2;
-padding: 0px;
-margin: 0px;
-color: white;
--webkit-transition: 0.3s ease-in-out;
--moz-transition: 0.3s ease-in-out;
--o-transition: 0.3s ease-in-out;
-transition: 0.3s ease-in-out;
+	line-height: 0;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	text-transform: normal;
+	z-index: 2;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
+
 .hovered {
 	visibility: 1;
+
+}
+
+@media only screen and (max-width: 768px) {
+	#menu  {
+	right: 3%;
+	top: 0px;
+	}
+	#menu ul {
+		margin-top: 18px;
+	}
+
+	#logo {
+		display:none;
+	}
+
+	#circleLogo {
+		display: block;
+		position: fixed;
+		left: 3%;
+		z-index: 101;
+		padding-left: 10px;
+		top: 10px;
+	}
+
+	.main {
+		margin-left: 3%;
+		width: 94%;
+	}
+#slides {
+	margin-top: 0px;
+}
+	#overlay {
+		position:relative;
+		margin-right: 3px;
+		width: 94%;
+		font-size: 18px;
+		left: 3;
+		top: 0;
+	}
 
 }
