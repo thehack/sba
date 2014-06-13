@@ -63,7 +63,10 @@
           //Updates scroll position
           lastScroll = st;
 
-
+          // show tweet status
+          var showTweet = function() {
+          $('.e-entry-title').show();
+        };
         }); // end document.ready function
 
 

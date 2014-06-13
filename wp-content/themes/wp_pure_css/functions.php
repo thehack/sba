@@ -2,6 +2,7 @@
 /* Disable the Admin Bar. */
 show_admin_bar( false );
     // add categories to attachments
+
     function wptp_add_categories_to_attachments() {
         register_taxonomy_for_object_type( 'category', 'attachment' );
     }
